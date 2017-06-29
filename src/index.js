@@ -1,4 +1,3 @@
-
 export const binary = (arr, num) => {
 
   if(arr.length < 1 || (arr.length == 1 && arr[0] != num)){
@@ -13,12 +12,10 @@ export const binary = (arr, num) => {
 
   if(arr[pivot] == num) {
     return pivot;
-
   } else if(arr[pivot] > num) {
     last = pivot;
     let array = arr.slice(0, last);
     return binary(array, num);
-
   } else {
     first = pivot;
     let array2 = arr.slice(first, last + 1);

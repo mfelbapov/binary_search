@@ -45,6 +45,4 @@ describe("Binary Search Algorithm", () => {
   it("Should return an index in array of any size, of number we are looking for", () => {
     expect(binary([1, 2, 4, 6, 7, 8], 7)).toEqual(4);
   })
-
-
 })
